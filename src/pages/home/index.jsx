@@ -1,14 +1,22 @@
 import React from 'react';
-import './Home.css';
-import { Header, Vitrine } from '../../components/common';
+import Container from './styles';
+import {
+  HeaderDesktop,
+  BuscaDesktop,
+  VitrineDesktop,
+  VitrineMobile,
+  MenuMobile,
+} from '../../components';
 
 function Home() {
   return (
-    <>
-      <Header />
-
-      <Vitrine />
-    </>
+    <Container>
+      <HeaderDesktop />
+      <BuscaDesktop />
+      <VitrineDesktop />
+      <VitrineMobile />
+      <MenuMobile />
+    </Container>
   );
 }
 

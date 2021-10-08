@@ -1,14 +1,7 @@
 import React from 'react';
 
-import './Institucional.css';
-import { Header } from '../../components/common';
-
 function Institucional() {
-  return (
-    <>
-      <Header />
-    </>
-  );
+  return <></>;
 }
 
 export default Institucional;
