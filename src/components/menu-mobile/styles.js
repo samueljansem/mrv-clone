@@ -15,6 +15,8 @@ const Container = styled.section`
   align-items: center;
   box-shadow: 0 0 20px 0.1px rgba(1, 1, 1, 0.2);
 
+  z-index: 2;
+
   @media (max-width: 1180px) {
     display: flex;
   }

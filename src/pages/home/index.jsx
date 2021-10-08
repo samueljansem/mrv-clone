@@ -1,12 +1,13 @@
 import React from 'react';
-import Container from './styles';
 import {
   HeaderDesktop,
   BuscaDesktop,
   VitrineDesktop,
   VitrineMobile,
   MenuMobile,
+  // CardImovel,
 } from '../../components';
+import { Container, DobraImoveis, TituloDobraImoveis } from './styles';
 
 function Home() {
   return (
@@ -16,6 +17,10 @@ function Home() {
       <VitrineDesktop />
       <VitrineMobile />
       <MenuMobile />
+      <DobraImoveis>
+        <TituloDobraImoveis>Imóveis à venda em Minas Gerais</TituloDobraImoveis>
+        {/* <CardImovel /> */}
+      </DobraImoveis>
     </Container>
   );
 }

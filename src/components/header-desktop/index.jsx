@@ -6,8 +6,9 @@ import {
   GiBrazilFlagIcon,
   GiUsaFlagIcon,
   FaChevronDownIcon,
+  ImgLogo,
 } from './styles';
-import logo from '../../assets/img/logo.png';
+import logo from '../../assets/img/logo-mrv.webp';
 
 export default function Header() {
   return (
@@ -15,7 +16,7 @@ export default function Header() {
       <main>
         <div className="header-logo">
           <a href="/">
-            <img alt="MRV" src={logo} />
+            <ImgLogo alt="MRV" src={logo} />
           </a>
         </div>
         <Links className="header-links">

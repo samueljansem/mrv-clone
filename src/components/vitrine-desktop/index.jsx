@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from './styles';
-import vitrine from '../../assets/img/vitrine-desktop.png';
+import vitrine from '../../assets/img/vitrine-desktop-2.png';
 
 export default function VitrineDesktop() {
   return (

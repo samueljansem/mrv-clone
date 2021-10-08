@@ -6,9 +6,10 @@ import { FaChevronDown } from 'react-icons/fa';
 const Container = styled.header`
   background: var(--color-white);
   padding: 0 15px;
-  height: 80px;
+  height: 70px;
   justify-content: space-between;
   align-items: center;
+  overflow: hidden;
 
   position: fixed;
   top: 0;
@@ -27,9 +28,13 @@ const Container = styled.header`
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin: 0 200px;
+    margin: 0 17%;
+    height: 100%auto;
+    overflow: hidden;
   }
 `;
+
+const ImgLogo = styled.img``;
 
 const GrAccessibilityIcon = styled(GrAccessibility)`
   color: var(--color-black);
@@ -64,6 +69,8 @@ const Links = styled.div`
     text-decoration: none;
     align-items: center;
     justify-content: left;
+    font-family: 'averta-bold';
+    font-weight: 300;
   }
 `;
 
@@ -74,4 +81,5 @@ export {
   GiBrazilFlagIcon,
   GiUsaFlagIcon,
   FaChevronDownIcon,
+  ImgLogo,
 };
