@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 import Select from 'react-select';
-import COLORS from '../../styles/Colors';
 import { MdMessage } from 'react-icons/md';
 import { RiFilter3Fill } from 'react-icons/ri';
+import COLORS from '../../styles/Colors';
 
 const Container = styled.div`
   background: var(--color-search);
