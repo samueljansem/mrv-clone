@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const Container = styled.section`
   width: 100%;
-  position: fixed;
   overflow: hidden;
   height: 250px;
   top: 0;

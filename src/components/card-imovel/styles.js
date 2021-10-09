@@ -2,8 +2,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   width: 270px;
-  height: 600px;
-  overflow: hidden;
+  height: 540px;
   border-radius: 6px;
   background: var(--color-orange);
 `;

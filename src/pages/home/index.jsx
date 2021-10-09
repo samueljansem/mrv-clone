@@ -5,7 +5,7 @@ import {
   VitrineDesktop,
   VitrineMobile,
   MenuMobile,
-  // CardImovel,
+  CardImovel,
 } from '../../components';
 import { Container, DobraImoveis, TituloDobraImoveis } from './styles';
 
@@ -19,7 +19,7 @@ function Home() {
       <MenuMobile />
       <DobraImoveis>
         <TituloDobraImoveis>Imóveis à venda em Minas Gerais</TituloDobraImoveis>
-        {/* <CardImovel /> */}
+        <CardImovel />
       </DobraImoveis>
     </Container>
   );

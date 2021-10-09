@@ -5,13 +5,14 @@ import { RiFilter3Fill } from 'react-icons/ri';
 import COLORS from '../../styles/Colors';
 
 const Container = styled.div`
+  position: sticky;
+  top: 0px;
+
   background: var(--color-search);
   padding: 0 15px;
   height: 92px;
+  width: 100%;
   align-items: center;
-
-  position: fixed;
-  top: 70px;
   left: 0;
   right: 0;
   z-index: 2;
@@ -37,20 +38,21 @@ const Container = styled.div`
 
 const SearchTitle = styled.span`
   color: var(--color-white);
-  font-weight: bold;
-  box-sizing: border-box;
+  font-family: 'averta-regular';
 `;
 
 const BoxChat = styled.div`
-  background: var(--color-orange);
+  background: linear-gradient(45deg, var(--color-orange), var(--color-lightorange)) !important;
   color: var(--color-search);
   height: 92px;
-  width: 348px;
+  width: 278px;
   justify-content: center;
   align-items: center;
   font-weight: 400;
   font-size: 22px;
   right: 0;
+  font-family: 'averta-bold';
+  font-size: 18px;
 
   display: none;
 
@@ -58,6 +60,7 @@ const BoxChat = styled.div`
     display: flex;
   }
 `;
+
 const AdvancedBoxChat = styled.div`
   background: var(--color-orange);
   color: var(--color-search);
@@ -79,7 +82,7 @@ const AdvancedBoxChat = styled.div`
 const MdMessageIcon = styled(MdMessage)`
   color: var(--color-search);
   margin-left: 5px;
-  font-size: 24px;
+  font-size: 35px;
 `;
 
 const SearchFilters = styled.div`
@@ -89,9 +92,7 @@ const SearchFilters = styled.div`
 `;
 
 const SearchSelect = styled(Select)`
-  border-radius: 8px;
-  width: 328px;
-  padding: 10px 0px;
+  width: 330px;
   font-size: 18px;
   text-indent: 5%;
   color: var(--color-lightblack);
@@ -102,9 +103,16 @@ const SelectStyles = {
     ...base,
     color: COLORS.lightblack,
   }),
-  control: (base) => ({
+  control: (base, state) => ({
     ...base,
     color: COLORS.lightblack,
+    borderRadius: '10px',
+    height: '48px',
+    boxShadow: state.isFocused ? `0 0 0 0.2rem ${COLORS.search}` : 0,
+    borderColor: state.isFocused ? COLORS.search : base.borderColor,
+    '&:hover': {
+      borderColor: state.isFocused ? COLORS.search : base.borderColor,
+    },
   }),
   singleValue: (base) => ({
     ...base,
@@ -113,19 +121,18 @@ const SelectStyles = {
   dropdownIndicator: (base) => ({
     ...base,
     color: COLORS.search,
-    fontSize: '20px',
   }),
 };
 
 const SearchButton = styled.button`
   background: var(--color-lightgreen);
   color: var(--color-white);
-  font-weight: bold;
+  font-family: 'averta-bold';
   width: 142px;
   height: 56px;
   border: none;
   border-radius: 8px;
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
 `;
 
@@ -140,7 +147,6 @@ const AdvancedContainer = styled.div`
   padding: 0 15px;
   align-items: center;
   height: 200px;
-  position: fixed;
   top: 70px;
   left: 0;
   right: 0;

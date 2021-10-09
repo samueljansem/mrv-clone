@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-
 import AvertaBoldWoff from '../assets/fonts/AvertaStd-Bold.woff';
 import AvertaBoldWoff2 from '../assets/fonts/AvertaStd-Bold.woff2';
-
 import AvertaRegularWoff from '../assets/fonts/AvertaStd-Regular.woff';
 import AvertaRegularWoff2 from '../assets/fonts/AvertaStd-Regular.woff2';
 
@@ -24,6 +22,7 @@ export default createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
   }
 
@@ -31,18 +30,15 @@ export default createGlobalStyle`
     height: 100%;
     width: 100%;
     background: #f5f5f5;
-    overflow: hidden;
-  }
-
-
-  *, button, input {
-    font-family: 'averta-regular';
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   :root {
     --color-search: #006b3f;
     --color-lightgreen: #00d38d;
-    --color-orange: #ff9d1e;
+    --color-orange: #ff8b22;
+    --color-lightorange: #ffb719;
     --color-background: #f5f5f5;
     --color-link: #0073b1;
     --color-white: #fff;

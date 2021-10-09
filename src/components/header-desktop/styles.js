@@ -6,12 +6,11 @@ import { FaChevronDown } from 'react-icons/fa';
 const Container = styled.header`
   background: var(--color-white);
   padding: 0 15px;
+  width: 100%;
   height: 70px;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
-
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -56,22 +55,41 @@ const GiUsaFlagIcon = styled(GiUsaFlag)`
 
 const FaChevronDownIcon = styled(FaChevronDown)`
   color: var(--color-search);
+  font-size: 18px;
 `;
 
-const Links = styled.div`
-  > a + a {
-    margin-left: 35px;
-  }
+const ChevronDownWrapper = styled.div`
+  margin-top: 3px;
+  margin-left: 5px;
+  align-items: center;
+  display: flex;
+`;
+
+const LinkWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  margin: 0px 17px;
 
   > a {
     color: var(--color-search);
     font-weight: bold;
     text-decoration: none;
     align-items: center;
-    justify-content: left;
+    justify-content: space-evenly;
     font-family: 'averta-bold';
     font-weight: 300;
   }
+`;
+
+const Links = styled.div`
+  display: flex;
+  color: var(--color-search);
+  font-weight: bold;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: 'averta-bold';
+  font-weight: 300;
 `;
 
 export {
@@ -81,5 +99,7 @@ export {
   GiBrazilFlagIcon,
   GiUsaFlagIcon,
   FaChevronDownIcon,
+  LinkWrapper,
+  ChevronDownWrapper,
   ImgLogo,
 };

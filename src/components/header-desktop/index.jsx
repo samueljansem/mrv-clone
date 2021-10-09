@@ -5,7 +5,9 @@ import {
   GrAccessibilityIcon,
   GiBrazilFlagIcon,
   GiUsaFlagIcon,
+  LinkWrapper,
   FaChevronDownIcon,
+  ChevronDownWrapper,
   ImgLogo,
 } from './styles';
 import logo from '../../assets/img/logo-mrv.webp';
@@ -20,24 +22,42 @@ export default function Header() {
           </a>
         </div>
         <Links className="header-links">
-          <a href="/imoveis">
-            Imóveis a venda <FaChevronDownIcon />
-          </a>
-          <a href="/institucional">
-            Institucional <FaChevronDownIcon />
-          </a>
-          <a href="/sustentabilidade">
-            Sustentabilidade <FaChevronDownIcon />
-          </a>
-          <a href="/inovacao">
-            Inovação <FaChevronDownIcon />
-          </a>
-          <a href="/investidores">
-            Investidores <FaChevronDownIcon />
-          </a>
-          <a href="/clientes">
-            Clientes <FaChevronDownIcon />
-          </a>
+          <LinkWrapper>
+            <a href="/">Imóveis à venda</a>
+            <ChevronDownWrapper>
+              <FaChevronDownIcon />
+            </ChevronDownWrapper>
+          </LinkWrapper>
+          <LinkWrapper>
+            <a href="/">Institucional</a>
+            <ChevronDownWrapper>
+              <FaChevronDownIcon />
+            </ChevronDownWrapper>
+          </LinkWrapper>
+          <LinkWrapper>
+            <a href="/">Sustentabilidade</a>
+            <ChevronDownWrapper>
+              <FaChevronDownIcon />
+            </ChevronDownWrapper>
+          </LinkWrapper>
+          <LinkWrapper>
+            <a href="/">Inovação</a>
+            <ChevronDownWrapper>
+              <FaChevronDownIcon />
+            </ChevronDownWrapper>
+          </LinkWrapper>
+          <LinkWrapper>
+            <a href="/">Investidores</a>
+            <ChevronDownWrapper>
+              <FaChevronDownIcon />
+            </ChevronDownWrapper>
+          </LinkWrapper>
+          <LinkWrapper>
+            <a href="/">Clientes</a>
+            <ChevronDownWrapper>
+              <FaChevronDownIcon />
+            </ChevronDownWrapper>
+          </LinkWrapper>
         </Links>
         <div>
           <GiBrazilFlagIcon />
