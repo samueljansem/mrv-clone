@@ -8,6 +8,7 @@ import {
   CardImovel,
 } from '../../components';
 import { Container, DobraImoveis, TituloDobraImoveis } from './styles';
+import CardImage from '../../assets/img/example-card.jpg';
 
 function Home() {
   return (
@@ -19,7 +20,7 @@ function Home() {
       <MenuMobile />
       <DobraImoveis>
         <TituloDobraImoveis>Imóveis à venda em Minas Gerais</TituloDobraImoveis>
-        <CardImovel />
+        <CardImovel cardImage={CardImage} />
       </DobraImoveis>
     </Container>
   );

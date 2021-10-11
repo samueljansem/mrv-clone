@@ -8,6 +8,7 @@ const Colors = {
   lightgray: '#d3d3d3',
   black: '#000000',
   lightblack: '#242625',
+  cardDetail: '#079d56',
 };
 
 export default Colors;

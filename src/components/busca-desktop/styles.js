@@ -42,7 +42,7 @@ const SearchTitle = styled.span`
 `;
 
 const BoxChat = styled.div`
-  background: linear-gradient(45deg, var(--color-orange), var(--color-lightorange)) !important;
+  background: linear-gradient(45deg, var(--color-orange), var(--color-lightorange));
   color: var(--color-search);
   height: 92px;
   width: 278px;

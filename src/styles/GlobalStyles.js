@@ -29,7 +29,7 @@ export default createGlobalStyle`
   html {
     height: 100%;
     width: 100%;
-    background: #f5f5f5;
+    background: var(--color-background);
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -37,6 +37,7 @@ export default createGlobalStyle`
   :root {
     --color-search: #006b3f;
     --color-lightgreen: #00d38d;
+    --color-card-detail: #079d56;
     --color-orange: #ff8b22;
     --color-lightorange: #ffb719;
     --color-background: #f5f5f5;
@@ -45,5 +46,6 @@ export default createGlobalStyle`
     --color-lightgray: #d3d3d3;
     --color-black: #000000;
     --color-lightblack: #242625;
+    --color-yellow: #ffb719;
   }
 `;

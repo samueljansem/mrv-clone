@@ -6,6 +6,8 @@ const Container = styled.div`
 `;
 
 const DobraImoveis = styled.div`
+  display: block;
+  justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
   top: 659px;
@@ -14,6 +16,7 @@ const DobraImoveis = styled.div`
 `;
 
 const TituloDobraImoveis = styled.h1`
+  width: 100%;
   font-size: 40px;
   font-family: 'averta-bold';
   font-weight: 400;
