@@ -5,14 +5,16 @@ const Container = styled.div`
   width: 100%;
 `;
 
+const Wrapper = styled.div`
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 const DobraImoveis = styled.div`
-  display: block;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
-  top: 659px;
   background: var(--color-background);
-  margin: 50px 20% 1000px 20%;
+  margin-bottom: 50px;
 `;
 
 const TituloDobraImoveis = styled.h1`
@@ -24,4 +26,45 @@ const TituloDobraImoveis = styled.h1`
   margin-bottom: 25px;
 `;
 
-export { Container, DobraImoveis, TituloDobraImoveis };
+const TituloWrapper = styled.div`
+  width: 100%;
+`;
+
+const ListagemImoveis = styled.div`
+  width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  align-items: center;
+  justify-content: left;
+`;
+
+const ButtonWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
+const ConhecaMais = styled.button`
+  background: transparent;
+  border: solid 2px var(--color-orange);
+  border-radius: 10px;
+  width: 180px;
+  height: 48px;
+  color: var(--color-orange);
+  font-family: 'averta-bold';
+  font-size: 16px;
+  align-self: center;
+  justify-self: center;
+`;
+
+export {
+  Container,
+  Wrapper,
+  DobraImoveis,
+  TituloDobraImoveis,
+  TituloWrapper,
+  ListagemImoveis,
+  ConhecaMais,
+  ButtonWrapper,
+};

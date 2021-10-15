@@ -1,18 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-  CardImage,
-  Container,
-  ContentWrapper,
-  ImageWrapper,
-  SaibaMais,
-  SeloWrapper,
-} from './styles';
+import { CardImage, Container, ContentWrapper, ImageWrapper, SaibaMais, Selo } from './styles';
 
 export default function CardImovel({ cardImage }) {
   return (
     <Container>
-      <SeloWrapper>Casa Verde e Amarela</SeloWrapper>
+      <Selo>Casa Verde e Amarela</Selo>
       <ContentWrapper>
         <ImageWrapper>
           <CardImage alt="Imóvel" src={cardImage} />

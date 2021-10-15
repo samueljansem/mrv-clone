@@ -7,7 +7,17 @@ import {
   MenuMobile,
   CardImovel,
 } from '../../components';
-import { Container, DobraImoveis, TituloDobraImoveis } from './styles';
+import {
+  Container,
+  DobraImoveis,
+  TituloDobraImoveis,
+  ListagemImoveis,
+  TituloWrapper,
+  Wrapper,
+  ConhecaMais,
+  ButtonWrapper,
+} from './styles';
+
 import CardImage from '../../assets/img/example-card.jpg';
 
 function Home() {
@@ -18,10 +28,22 @@ function Home() {
       <VitrineDesktop />
       <VitrineMobile />
       <MenuMobile />
-      <DobraImoveis>
-        <TituloDobraImoveis>Imóveis à venda em Minas Gerais</TituloDobraImoveis>
-        <CardImovel cardImage={CardImage} />
-      </DobraImoveis>
+      <Wrapper>
+        <DobraImoveis>
+          <TituloWrapper>
+            <TituloDobraImoveis>Imóveis à venda em Minas Gerais</TituloDobraImoveis>
+          </TituloWrapper>
+          <ListagemImoveis>
+            <CardImovel cardImage={CardImage} />
+            <CardImovel cardImage={CardImage} />
+            <CardImovel cardImage={CardImage} />
+            <CardImovel cardImage={CardImage} />
+          </ListagemImoveis>
+          <ButtonWrapper>
+            <ConhecaMais>Conheça mais imóveis</ConhecaMais>
+          </ButtonWrapper>
+        </DobraImoveis>
+      </Wrapper>
     </Container>
   );
 }
