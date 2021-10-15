@@ -54,8 +54,6 @@ const ConhecaMais = styled.button`
   color: var(--color-orange);
   font-family: 'averta-bold';
   font-size: 16px;
-  align-self: center;
-  justify-self: center;
 `;
 
 export {
