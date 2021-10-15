@@ -6,6 +6,7 @@ import {
   VitrineMobile,
   MenuMobile,
   CardImovel,
+  FooterDesktop,
 } from '../../components';
 import {
   Container,
@@ -44,6 +45,7 @@ function Home() {
           </ButtonWrapper>
         </DobraImoveis>
       </Wrapper>
+      <FooterDesktop />
     </Container>
   );
 }

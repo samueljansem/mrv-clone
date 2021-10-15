@@ -31,7 +31,7 @@ const TituloWrapper = styled.div`
 `;
 
 const ListagemImoveis = styled.div`
-  width: 1280px;
+  width: 70vw;
   display: flex;
   flex-wrap: wrap;
   max-width: 100vw;
