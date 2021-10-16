@@ -15,6 +15,7 @@ const Wrapper = styled.div`
 const DobraImoveis = styled.div`
   background: var(--color-background);
   margin-bottom: 50px;
+  width: 1200px;
 `;
 
 const TituloDobraImoveis = styled.h1`

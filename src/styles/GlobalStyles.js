@@ -30,8 +30,30 @@ export default createGlobalStyle`
     height: 100%;
     width: 100%;
     background: var(--color-background);
-    overflow-y: scroll;
-    overflow-x: hidden;
+    overflow: overlay;
+    scroll-behavior: smooth;
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 12px;
+    background-color: transparent;
+
+  }
+
+  ::-webkit-scrollbar-button {
+      display: none;
+      width: 0;
+      height: 0;
+  }
+
+  ::-webkit-scrollbar-corner {
+      background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background-color: var(--color-search);
+      border-radius: 10px;
   }
 
   :root {

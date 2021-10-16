@@ -39,6 +39,8 @@ function Home() {
             <CardImovel cardImage={CardImage} />
             <CardImovel cardImage={CardImage} />
             <CardImovel cardImage={CardImage} />
+            <CardImovel cardImage={CardImage} />
+            <CardImovel cardImage={CardImage} />
           </ListagemImoveis>
           <ButtonWrapper>
             <ConhecaMais>Conheça mais imóveis</ConhecaMais>

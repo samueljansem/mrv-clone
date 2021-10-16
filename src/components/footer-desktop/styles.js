@@ -12,10 +12,6 @@ const Container = styled.footer`
   width: 100%;
 `;
 
-const Wrapper = styled.div`
-  width: 100%;
-`;
-
 const Links = styled.section`
   display: flex;
   justify-content: center;
@@ -37,6 +33,8 @@ const Circle = styled.span`
   margin-right: 10px;
 `;
 
+const LinksWrapper = styled.div``;
+
 const Navegue = styled.section`
   display: flex;
   align-items: center;
@@ -52,7 +50,7 @@ const NavegueText = styled.span`
 `;
 
 const MrveCo = styled.section`
-  padding-top: 30px;
+  padding: 30px 0;
   height: 150px;
   background: var(--color-background);
   display: flex;
@@ -114,7 +112,6 @@ const ChevronDown = styled(ChevronDownIcon)`
 
 export {
   Container,
-  Wrapper,
   Links,
   Navegue,
   NavegueText,
@@ -128,4 +125,5 @@ export {
   Twitter,
   Instagram,
   ChevronDown,
+  LinksWrapper,
 };

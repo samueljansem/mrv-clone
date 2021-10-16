@@ -4,7 +4,7 @@ import { MdDirectionsBike } from 'react-icons/md';
 import { FaSwimmingPool } from 'react-icons/fa';
 
 const Container = styled.div`
-  width: 280px;
+  width: 270px;
   height: 580px;
   background: var(--color-card-detail);
   box-shadow: 1px 1px 10px 1px rgba(1, 1, 1, 0.4);
@@ -12,8 +12,7 @@ const Container = styled.div`
   position: relative;
   border-radius: 15px;
   display: block;
-  margin-right: 40px;
-  margin-bottom: 40px;
+  margin: 0 15px 40px 15px;
 
   &:hover {
     transform: scale(1.01);
