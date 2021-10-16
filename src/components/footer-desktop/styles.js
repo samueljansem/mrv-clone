@@ -5,6 +5,7 @@ import {
   YoutubeIcon,
   TwitterIcon,
   InstagramIcon,
+  ChevronDownIcon,
 } from '../../styles/Icons';
 
 const Container = styled.footer`
@@ -37,13 +38,40 @@ const Circle = styled.span`
 `;
 
 const Navegue = styled.section`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--color-search);
   height: 75px;
 `;
 
+const NavegueText = styled.span`
+  font-family: 'averta-bold';
+  font-size: 20px;
+  color: var(--color-background);
+`;
+
 const MrveCo = styled.section`
+  padding-top: 30px;
   height: 150px;
   background: var(--color-background);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
+
+const LogoWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 100%;
+`;
+
+const Rights = styled.span`
+  color: #999e9c;
+  font-family: 'averta-regular';
+  font-size: 16px;
 `;
 
 const Facebook = styled(FacebookIcon)`
@@ -76,16 +104,28 @@ const Instagram = styled(InstagramIcon)`
   color: var(--color-search);
 `;
 
+const ChevronDown = styled(ChevronDownIcon)`
+  margin-left: 12px;
+  width: 24px;
+  height: 24px;
+  color: var(--color-background);
+  cursor: pointer;
+`;
+
 export {
   Container,
   Wrapper,
   Links,
   Navegue,
+  NavegueText,
   MrveCo,
+  LogoWrapper,
+  Rights,
   Circle,
   Facebook,
   Linkedin,
   Youtube,
   Twitter,
   Instagram,
+  ChevronDown,
 };

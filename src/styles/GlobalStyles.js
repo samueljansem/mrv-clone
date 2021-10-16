@@ -44,6 +44,7 @@ export default createGlobalStyle`
     --color-link: #0073b1;
     --color-white: #fff;
     --color-lightgray: #d3d3d3;
+    --color-gray: #5d615f;
     --color-black: #000000;
     --color-lightblack: #242625;
     --color-yellow: #ffb719;

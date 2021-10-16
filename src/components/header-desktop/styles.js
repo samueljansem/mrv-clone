@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { GrAccessibility } from 'react-icons/gr';
+import { MdAccessibility } from 'react-icons/md';
 import { GiBrazilFlag, GiUsaFlag } from 'react-icons/gi';
 import { FaChevronDown } from 'react-icons/fa';
 
@@ -35,22 +35,25 @@ const Container = styled.header`
 
 const ImgLogo = styled.img``;
 
-const GrAccessibilityIcon = styled(GrAccessibility)`
+const GrAccessibilityIcon = styled(MdAccessibility)`
   color: var(--color-black);
   margin-left: 10px;
-  font-size: 22px;
+  width: 18px;
+  height: 18px;
 `;
 
 const GiBrazilFlagIcon = styled(GiBrazilFlag)`
   color: var(--color-black);
-  border: 1px solird var(--color-black);
-  font-size: 22px;
+  border: 1px solid var(--color-black);
+  width: 26px;
+  height: 18px;
 `;
 
 const GiUsaFlagIcon = styled(GiUsaFlag)`
   color: var(--color-black);
   margin-left: 10px;
-  font-size: 22px;
+  width: 18px;
+  height: 18px;
 `;
 
 const FaChevronDownIcon = styled(FaChevronDown)`

@@ -130,18 +130,21 @@ const Elevador = styled(GiElevator)`
   width: 20px;
   height: 20px;
   margin-right: 10px;
+  color: var(--color-gray);
 `;
 
 const Bicicletario = styled(MdDirectionsBike)`
   width: 20px;
   height: 20px;
   margin-right: 10px;
+  color: var(--color-gray);
 `;
 
 const Lazer = styled(FaSwimmingPool)`
   width: 20px;
   height: 20px;
   margin-right: 10px;
+  color: var(--color-gray);
 `;
 
 const Linha = styled.hr`

@@ -54,9 +54,6 @@ export default function Header() {
           </LinkWrapper>
           <LinkWrapper>
             <a href="/">Clientes</a>
-            <ChevronDownWrapper>
-              <FaChevronDownIcon />
-            </ChevronDownWrapper>
           </LinkWrapper>
         </Links>
         <div>
