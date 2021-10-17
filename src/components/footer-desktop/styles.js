@@ -14,6 +14,7 @@ const Container = styled.footer`
 
 const Links = styled.section`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   height: 625px;
@@ -33,7 +34,47 @@ const Circle = styled.span`
   margin-right: 10px;
 `;
 
-const LinksWrapper = styled.div``;
+const Socials = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+const LinksGrid = styled.div`
+  display: grid;
+  width: 1200px;
+  height: 400px;
+
+  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: repeat(2, 200px);
+
+  grid-template-areas:
+    'CONTATO IMOVEIS INSTITUCIONAL INOVACAO INVESTIDORES  CLIENTES'
+    'CONTATO IMOVEIS INSTITUCIONAL SUSTENTABILIDADE INVESTIDORES CLIENTES';
+`;
+
+const LinkTitle = styled.span`
+  font-size: 20px;
+  font-family: 'averta-bold';
+  color: var(--color-background);
+  width: 100%;
+  margin-bottom: 10px;
+`;
+
+const LinkSpan = styled.span`
+  font-size: 14px;
+  font-family: 'averta-bold';
+  color: var(--color-background);
+  margin-bottom: 5px;
+`;
+
+const LinkList = styled.div`
+  color: var(--color-background);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+`;
 
 const Navegue = styled.section`
   display: flex;
@@ -113,6 +154,7 @@ const ChevronDown = styled(ChevronDownIcon)`
 export {
   Container,
   Links,
+  Socials,
   Navegue,
   NavegueText,
   MrveCo,
@@ -125,5 +167,8 @@ export {
   Twitter,
   Instagram,
   ChevronDown,
-  LinksWrapper,
+  LinksGrid,
+  LinkList,
+  LinkTitle,
+  LinkSpan,
 };
