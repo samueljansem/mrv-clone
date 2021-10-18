@@ -1,7 +1,5 @@
 import React from 'react';
 
-function Inovacao() {
-  return <></>;
-}
+const Inovacao: React.FC = () => <></>;
 
 export default Inovacao;

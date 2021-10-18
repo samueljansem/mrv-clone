@@ -1,7 +1,5 @@
 import React from 'react';
 
-function Sustentabilidade() {
-  return <></>;
-}
+const Sustentabilidade: React.FC = () => <></>;
 
 export default Sustentabilidade;

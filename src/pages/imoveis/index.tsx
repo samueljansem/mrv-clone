@@ -1,7 +1,5 @@
 import React from 'react';
 
-function Imoveis() {
-  return <></>;
-}
+const Imoveis: React.FC = () => <></>;
 
 export default Imoveis;

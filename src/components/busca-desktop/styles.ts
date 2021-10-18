@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Select from 'react-select';
+import Select, { StylesConfig } from 'react-select';
 import { MdMessage } from 'react-icons/md';
 import { RiFilter3Fill } from 'react-icons/ri';
 import COLORS from '../../styles/Colors';
@@ -98,7 +98,7 @@ const SearchSelect = styled(Select)`
   color: var(--color-lightblack);
 `;
 
-const SelectStyles = {
+const SelectStyles: StylesConfig = {
   option: (base) => ({
     ...base,
     color: COLORS.lightblack,
@@ -108,7 +108,7 @@ const SelectStyles = {
     color: COLORS.lightblack,
     borderRadius: '10px',
     height: '48px',
-    boxShadow: state.isFocused ? `0 0 0 0.2rem ${COLORS.search}` : 0,
+    boxShadow: state.isFocused ? `0 0 0 0.2rem ${COLORS.search}` : `0`,
     borderColor: state.isFocused ? COLORS.search : base.borderColor,
     '&:hover': {
       borderColor: state.isFocused ? COLORS.search : base.borderColor,

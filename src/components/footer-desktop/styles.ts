@@ -19,7 +19,7 @@ const Links = styled.section`
   width: 100%;
   height: 625px;
   background: linear-gradient(45deg, #006b3f, #079d56);
-  padding: 50px;
+  padding-top: 30px;
 `;
 
 const Circle = styled.span`
@@ -59,21 +59,34 @@ const LinkTitle = styled.span`
   font-family: 'averta-bold';
   color: var(--color-background);
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 `;
 
 const LinkSpan = styled.span`
   font-size: 14px;
   font-family: 'averta-bold';
   color: var(--color-background);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 `;
 
+interface Props {
+  area: string;
+}
+
 const LinkList = styled.div`
+  grid-area: ${(p: Props) => p.area};
   color: var(--color-background);
   display: flex;
   width: 100%;
   flex-direction: column;
+  padding: 0 5px;
+`;
+
+const Separator = styled.hr`
+  border-radius: 4px;
+  height: 4px;
+  width: 50px;
+  background: var(--color-white);
 `;
 
 const Navegue = styled.section`
@@ -171,4 +184,5 @@ export {
   LinkList,
   LinkTitle,
   LinkSpan,
+  Separator,
 };

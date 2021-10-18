@@ -1,7 +1,5 @@
 import React from 'react';
 
-function Institucional() {
-  return <></>;
-}
+const Institucional: React.FC = () => <></>;
 
 export default Institucional;

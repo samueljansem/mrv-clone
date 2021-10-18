@@ -52,14 +52,21 @@ const bairros = [
   { value: 25, label: 'Novo Colorado', idCidade: 7 },
 ];
 
+const selectReducer = (acc, obj) => {
+  let { value, label } = obj;
+  return [...acc, { value, label }];
+};
+
 function obterEstadosSelect() {
-  return estados;
+  return estados.reduce((acc, estado) => selectReducer(acc, estado), []);
 }
 
 function obterCidadesSelect(idEstado = undefined) {
   if (idEstado === undefined) return [];
 
-  return cidades.filter((item) => item.idEstado === idEstado);
+  return cidades
+    .filter((item) => item.idEstado === idEstado)
+    .reduce((acc, cidade) => selectReducer(acc, cidade), []);
 }
 
 function obterBairrosSelect(idCidade = undefined) {

@@ -1,7 +1,5 @@
 import React from 'react';
 
-function Clientes() {
-  return <></>;
-}
+const Clientes: React.FC = () => <></>;
 
 export default Clientes;

@@ -1,7 +1,5 @@
 import React from 'react';
 
-function Investidores() {
-  return <></>;
-}
+const Investidores: React.FC = () => <></>;
 
 export default Investidores;
