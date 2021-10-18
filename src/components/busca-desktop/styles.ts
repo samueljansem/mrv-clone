@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import Select, { StylesConfig } from 'react-select';
-import { MdMessage } from 'react-icons/md';
-import { RiFilter3Fill } from 'react-icons/ri';
+import { MdMessage, RiFilter3Fill } from '../../styles/Icons';
 import COLORS from '../../styles/Colors';
 
 const Container = styled.div`

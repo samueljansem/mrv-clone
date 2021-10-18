@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-import { GiElevator } from 'react-icons/gi';
-import { MdDirectionsBike } from 'react-icons/md';
-import { FaSwimmingPool } from 'react-icons/fa';
+import { GiElevator, MdDirectionsBike, FaSwimmingPool } from '../../styles/Icons';
 
 const Container = styled.div`
   width: 270px;

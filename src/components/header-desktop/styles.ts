@@ -1,7 +1,5 @@
 import styled from 'styled-components';
-import { MdAccessibility } from 'react-icons/md';
-import { GiBrazilFlag, GiUsaFlag } from 'react-icons/gi';
-import { FaChevronDown } from 'react-icons/fa';
+import { FaChevronDown, GiBrazilFlag, GiUsaFlag, MdAccessibility } from '../../styles/Icons';
 
 const Container = styled.header`
   background: var(--color-white);

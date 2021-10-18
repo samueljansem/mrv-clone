@@ -1,6 +1,5 @@
 import styled, { css } from 'styled-components';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { ImSearch, ImWhatsapp } from 'react-icons/im';
+import { GiHamburgerMenu, ImSearch, ImWhatsapp } from '../../styles/Icons';
 
 const Container = styled.section`
   position: fixed;
