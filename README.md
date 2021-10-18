@@ -25,7 +25,7 @@ Este projeto foi criado utilizando o Yarn como gerenciador de pacotes, então pr
   npm install yarn -g
   ```
 
-- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)![Syntax Highlight and IntelliSense](https://github.com/styled-components/vscode-styled-components/raw/HEAD/demo.gif)
+- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)<br/>![Syntax Highlight and IntelliSense](https://github.com/styled-components/vscode-styled-components/raw/HEAD/demo.gif)
 
 - [editorconfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
