@@ -79,7 +79,7 @@ function ObterRodape(): Array<Categoria> {
         'Diretoria e Conselho',
         'Agenda de RI',
         'Central de Resultados',
-        'Ratings &amp; Covenants',
+        'Ratings & Covenants',
       ],
     },
     {
