@@ -1,4 +1,10 @@
-function ObterTopo() {
+type TopoItem = {
+  id: number;
+  name: string;
+  pathName: string;
+};
+
+function ObterTopo(): Array<TopoItem> {
   const navs = [
     {
       id: 1,

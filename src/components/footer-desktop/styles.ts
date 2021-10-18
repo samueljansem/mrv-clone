@@ -39,15 +39,16 @@ const Socials = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 30px;
 `;
 
 const LinksGrid = styled.div`
   display: grid;
   width: 1200px;
-  height: 400px;
+  height: auto;
 
   grid-template-columns: repeat(6, 200px);
-  grid-template-rows: repeat(2, 200px);
+  grid-template-rows: 180px auto;
 
   grid-template-areas:
     'CONTATO IMOVEIS INSTITUCIONAL INOVACAO INVESTIDORES  CLIENTES'
@@ -78,6 +79,7 @@ const LinkList = styled.div`
   color: var(--color-background);
   display: flex;
   width: 100%;
+  height: 100%;
   flex-direction: column;
   padding: 0 5px;
 `;

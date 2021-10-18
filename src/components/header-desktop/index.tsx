@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Container,
   Links,
@@ -11,57 +11,48 @@ import {
   ImgLogo,
 } from './styles';
 import logo from '../../assets/img/logo-mrv.webp';
+import { HeaderService } from '../../services';
 
-const Header: React.FC = () => (
-  <Container>
-    <main>
-      <div className="header-logo">
-        <a href="/">
-          <ImgLogo alt="MRV" src={logo} />
-        </a>
-      </div>
-      <Links className="header-links">
-        <LinkWrapper>
-          <a href="/">Imóveis à venda</a>
-          <ChevronDownWrapper>
-            <FaChevronDownIcon />
-          </ChevronDownWrapper>
-        </LinkWrapper>
-        <LinkWrapper>
-          <a href="/">Institucional</a>
-          <ChevronDownWrapper>
-            <FaChevronDownIcon />
-          </ChevronDownWrapper>
-        </LinkWrapper>
-        <LinkWrapper>
-          <a href="/">Sustentabilidade</a>
-          <ChevronDownWrapper>
-            <FaChevronDownIcon />
-          </ChevronDownWrapper>
-        </LinkWrapper>
-        <LinkWrapper>
-          <a href="/">Inovação</a>
-          <ChevronDownWrapper>
-            <FaChevronDownIcon />
-          </ChevronDownWrapper>
-        </LinkWrapper>
-        <LinkWrapper>
-          <a href="/">Investidores</a>
-          <ChevronDownWrapper>
-            <FaChevronDownIcon />
-          </ChevronDownWrapper>
-        </LinkWrapper>
-        <LinkWrapper>
-          <a href="/">Clientes</a>
-        </LinkWrapper>
-      </Links>
-      <div>
-        <GiBrazilFlagIcon />
-        <GiUsaFlagIcon />
-        <GrAccessibilityIcon />
-      </div>
-    </main>
-  </Container>
-);
+type TopoItem = {
+  id: number;
+  name: string;
+  pathName: string;
+};
+
+const Header: React.FC = () => {
+  const [topo, setTopo] = useState<Array<TopoItem> | null>(null);
+
+  useEffect(() => {
+    const links = HeaderService.ObterTopo();
+    setTopo(links);
+  }, []);
+
+  return (
+    <Container>
+      <main>
+        <div className="header-logo">
+          <a href="/">
+            <ImgLogo alt="MRV" src={logo} />
+          </a>
+        </div>
+        <Links className="header-links">
+          {topo?.map((item) => (
+            <LinkWrapper>
+              <a href={item.pathName}>{item.name}</a>
+              <ChevronDownWrapper>
+                <FaChevronDownIcon />
+              </ChevronDownWrapper>
+            </LinkWrapper>
+          ))}
+        </Links>
+        <div>
+          <GiBrazilFlagIcon />
+          <GiUsaFlagIcon />
+          <GrAccessibilityIcon />
+        </div>
+      </main>
+    </Container>
+  );
+};
 
 export default Header;

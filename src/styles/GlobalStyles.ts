@@ -30,7 +30,8 @@ export default createGlobalStyle`
     height: 100%;
     width: 100%;
     background: var(--color-background);
-    overflow: overlay;
+    overflow-x: hidden;
+    overflow-y: overlay;
     scroll-behavior: smooth;
   }
 
