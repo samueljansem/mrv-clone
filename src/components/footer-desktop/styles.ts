@@ -1,11 +1,12 @@
 import styled from 'styled-components';
+
 import {
-  FacebookIcon,
-  LinkedinIcon,
-  YoutubeIcon,
-  TwitterIcon,
-  InstagramIcon,
-  ChevronDownIcon,
+  ImFacebook,
+  FaLinkedinIn,
+  FaYoutube,
+  SiTwitter,
+  FiInstagram,
+  FaChevronDown,
 } from '../../styles/Icons';
 
 const Container = styled.footer`
@@ -128,37 +129,37 @@ const Rights = styled.span`
   font-size: 16px;
 `;
 
-const Facebook = styled(FacebookIcon)`
+const Facebook = styled(ImFacebook)`
   width: 25px;
   height: 25px;
   color: var(--color-search);
 `;
 
-const Linkedin = styled(LinkedinIcon)`
+const Linkedin = styled(FaLinkedinIn)`
   width: 25px;
   height: 25px;
   color: var(--color-search);
 `;
 
-const Youtube = styled(YoutubeIcon)`
+const Youtube = styled(FaYoutube)`
   width: 25px;
   height: 25px;
   color: var(--color-search);
 `;
 
-const Twitter = styled(TwitterIcon)`
+const Twitter = styled(SiTwitter)`
   width: 25px;
   height: 25px;
   color: var(--color-search);
 `;
 
-const Instagram = styled(InstagramIcon)`
+const Instagram = styled(FiInstagram)`
   width: 25px;
   height: 25px;
   color: var(--color-search);
 `;
 
-const ChevronDown = styled(ChevronDownIcon)`
+const ChevronDown = styled(FaChevronDown)`
   margin-left: 12px;
   width: 24px;
   height: 24px;

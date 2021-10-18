@@ -58,4 +58,4 @@ Este projeto foi criado utilizando o Yarn como gerenciador de pacotes, então pr
 
 ## Contato :envelope_with_arrow:
 
-Samuel Jansem - [@samueljazen](https://twitter.com/samueljazen) - samuel.jansem@gmail.com
+Samuel Jansem - samuel.jansem@gmail.com
