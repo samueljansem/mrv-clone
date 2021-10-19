@@ -18,6 +18,8 @@ import {
   SeloWrapper,
   Selo,
   Linha,
+  StatusWrapper,
+  QuartosWrapper,
 } from './styles';
 
 interface Props {
@@ -29,6 +31,10 @@ const CardImovel: React.FC<Props> = ({ cardImage }) => (
     <Classificacao>Casa Verde e Amarela</Classificacao>
     <ContentWrapper>
       <ImageWrapper>
+        <QuartosWrapper>
+          2 quartos <Linha />
+        </QuartosWrapper>
+        <StatusWrapper>Lançamento</StatusWrapper>
         <CardImage alt="Imóvel" src={cardImage} />
       </ImageWrapper>
       <DescricaoWrapper>

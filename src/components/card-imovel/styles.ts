@@ -7,7 +7,6 @@ const Container = styled.div`
   background: var(--color-card-detail);
   box-shadow: 1px 1px 10px 1px rgba(1, 1, 1, 0.4);
   transition: all 0.2s ease-in-out;
-  position: relative;
   border-radius: 15px;
   display: block;
   margin: 0 15px 40px 15px;
@@ -34,9 +33,39 @@ const CardImage = styled.img`
 `;
 
 const ImageWrapper = styled.div`
-  display: flex;
+  position: relative;
   width: 100%;
   height: 266px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent 30%, var(--color-black) 100%);
+  }
+`;
+
+const StatusWrapper = styled.span`
+  position: absolute;
+  font-family: 'averta-bold';
+  font-size: 14px;
+  color: var(--color-background);
+  margin: 0 0 15px 15px;
+  bottom: 25px;
+  z-index: 2;
+`;
+
+const QuartosWrapper = styled.span`
+  position: absolute;
+  font-family: 'averta-bold';
+  font-size: 14px;
+  color: var(--color-background);
+  margin: 0 0px 15px 15px;
+  bottom: 0;
+  z-index: 2;
 `;
 
 const SaibaMais = styled.div`
@@ -145,6 +174,7 @@ const Lazer = styled(FaSwimmingPool)`
 `;
 
 const Linha = styled.hr`
+  margin-top: 3px;
   border-radius: 4px;
   height: 4px;
   width: 50px;
@@ -171,4 +201,6 @@ export {
   SeloWrapper,
   Selo,
   Linha,
+  StatusWrapper,
+  QuartosWrapper,
 };
