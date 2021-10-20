@@ -8,7 +8,6 @@ const Container = styled.div`
   box-shadow: 1px 1px 10px 1px rgba(1, 1, 1, 0.4);
   transition: all 0.2s ease-in-out;
   border-radius: 15px;
-  display: block;
   margin: 0 15px 40px 15px;
 
   &:hover {
@@ -21,6 +20,7 @@ const ContentWrapper = styled.div`
   width: 100%;
   height: 544px;
   background: var(--color-white);
+  position: relative;
   border-radius: 15px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -86,6 +86,7 @@ const Classificacao = styled.div`
   width: 170px;
   height: 21px;
   position: absolute;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: center;

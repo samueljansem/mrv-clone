@@ -28,8 +28,8 @@ interface Props {
 
 const CardImovel: React.FC<Props> = ({ cardImage }) => (
   <Container>
-    <Classificacao>Casa Verde e Amarela</Classificacao>
     <ContentWrapper>
+      <Classificacao>Casa Verde e Amarela</Classificacao>
       <ImageWrapper>
         <QuartosWrapper>
           2 quartos <Linha />

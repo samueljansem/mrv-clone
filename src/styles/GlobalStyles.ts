@@ -26,7 +26,9 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html {
+  html, body, #root {
+    max-width: 100vw;
+    max-height: 100vh;
     height: 100%;
     width: 100%;
     background: var(--color-background);
@@ -34,7 +36,6 @@ export default createGlobalStyle`
     overflow-y: overlay;
     scroll-behavior: smooth;
   }
-
 
   ::-webkit-scrollbar {
     width: 12px;
