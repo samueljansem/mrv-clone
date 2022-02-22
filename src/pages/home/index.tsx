@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   HeaderDesktop,
   BuscaDesktop,
@@ -20,34 +20,54 @@ import {
 } from './styles';
 
 import CardImage from '../../assets/img/example-card.jpg';
+import { CardImovelSkeleton } from '../../components/shimmer';
 
-const Home: React.FC = () => (
-  <Container>
-    <HeaderDesktop />
-    <BuscaDesktop />
-    <VitrineDesktop />
-    <VitrineMobile />
-    <MenuMobile />
-    <Wrapper>
-      <DobraImoveis>
-        <TituloWrapper>
-          <TituloDobraImoveis>Imóveis à venda em Minas Gerais</TituloDobraImoveis>
-        </TituloWrapper>
-        <ListagemImoveis>
-          <CardImovel cardImage={CardImage} />
-          <CardImovel cardImage={CardImage} />
-          <CardImovel cardImage={CardImage} />
-          <CardImovel cardImage={CardImage} />
-          <CardImovel cardImage={CardImage} />
-          <CardImovel cardImage={CardImage} />
-        </ListagemImoveis>
-        <ButtonWrapper>
-          <ConhecaMais>Conheça mais imóveis</ConhecaMais>
-        </ButtonWrapper>
-      </DobraImoveis>
-    </Wrapper>
-    <FooterDesktop />
-  </Container>
-);
+const Home: React.FC = () => {
+  const [loading, setLoading] = useState(true);
+
+  setTimeout(() => {
+    setLoading(false);
+  }, 3000);
+
+  return (
+    <Container>
+      <HeaderDesktop />
+      <BuscaDesktop />
+      <VitrineDesktop />
+      <VitrineMobile />
+      <MenuMobile />
+      <Wrapper>
+        <DobraImoveis>
+          <TituloWrapper>
+            <TituloDobraImoveis>Imóveis à venda em Minas Gerais</TituloDobraImoveis>
+          </TituloWrapper>
+          <ListagemImoveis>
+            {loading ? (
+              <>
+                <CardImovelSkeleton />
+                <CardImovelSkeleton />
+                <CardImovelSkeleton />
+                <CardImovelSkeleton />
+                <CardImovelSkeleton />
+              </>
+            ) : (
+              <>
+                <CardImovel cardImage={CardImage} />
+                <CardImovel cardImage={CardImage} />
+                <CardImovel cardImage={CardImage} />
+                <CardImovel cardImage={CardImage} />
+                <CardImovel cardImage={CardImage} />
+              </>
+            )}
+          </ListagemImoveis>
+          <ButtonWrapper>
+            <ConhecaMais>Conheça mais imóveis</ConhecaMais>
+          </ButtonWrapper>
+        </DobraImoveis>
+      </Wrapper>
+      <FooterDesktop />
+    </Container>
+  );
+};
 
 export default Home;
