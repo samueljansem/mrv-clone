@@ -1,48 +1,48 @@
 type TopoItem = {
-  id: number;
-  name: string;
-  pathName: string;
+    id: number;
+    name: string;
+    pathName: string;
 };
 
 function ObterTopo(): Array<TopoItem> {
-  const navs = [
-    {
-      id: 1,
-      name: 'Imóveis à venda',
-      pathName: '/imoveis',
-    },
-    {
-      id: 2,
-      name: 'Institucional',
-      pathName: '/institucional',
-    },
-    {
-      id: 3,
-      name: 'Sustentabilidade',
-      pathName: '/sustentabilidade',
-    },
-    {
-      id: 4,
-      name: 'Investidores',
-      pathName: '/investidores',
-    },
-    {
-      id: 5,
-      name: 'Clientes',
-      pathName: '/clientes',
-    },
-    {
-      id: 6,
-      name: 'Inovação',
-      pathName: '/inovacao',
-    },
-  ];
+    const navs = [
+        {
+            id: 1,
+            name: 'Imóveis à venda',
+            pathName: '/imoveis',
+        },
+        {
+            id: 2,
+            name: 'Institucional',
+            pathName: '/institucional',
+        },
+        {
+            id: 3,
+            name: 'Sustentabilidade',
+            pathName: '/sustentabilidade',
+        },
+        {
+            id: 4,
+            name: 'Investidores',
+            pathName: '/investidores',
+        },
+        {
+            id: 5,
+            name: 'Clientes',
+            pathName: '/clientes',
+        },
+        {
+            id: 6,
+            name: 'Inovação',
+            pathName: '/inovacao',
+        },
+    ];
 
-  return navs;
+    return navs;
 }
 
 const HeaderService = {
-  ObterTopo,
+    ObterTopo,
 };
 
 export default HeaderService;

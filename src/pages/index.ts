@@ -5,5 +5,15 @@ import Inovacao from './inovacao';
 import Institucional from './institucional';
 import Investidores from './investidores';
 import Sustentabilidade from './sustentabilidade';
+import Erro404 from './erro404';
 
-export { Clientes, Home, Imoveis, Inovacao, Institucional, Investidores, Sustentabilidade };
+export {
+    Clientes,
+    Home,
+    Imoveis,
+    Inovacao,
+    Institucional,
+    Investidores,
+    Sustentabilidade,
+    Erro404,
+};

@@ -7,11 +7,11 @@ import CardImovel from './card-imovel';
 import FooterDesktop from './footer-desktop';
 
 export {
-  HeaderDesktop,
-  BuscaDesktop,
-  VitrineDesktop,
-  VitrineMobile,
-  MenuMobile,
-  CardImovel,
-  FooterDesktop,
+    HeaderDesktop,
+    BuscaDesktop,
+    VitrineDesktop,
+    VitrineMobile,
+    MenuMobile,
+    CardImovel,
+    FooterDesktop,
 };

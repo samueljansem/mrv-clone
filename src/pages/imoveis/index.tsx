@@ -1,13 +1,5 @@
 import React from 'react';
-import { BuscaDesktop, FooterDesktop, HeaderDesktop, MenuMobile } from '../../components';
 
-const Imoveis: React.FC = () => (
-  <>
-    <HeaderDesktop />
-    <BuscaDesktop />
-    <MenuMobile />
-    <FooterDesktop />
-  </>
-);
+const Imoveis: React.FC = () => <h1>Imóveis</h1>;
 
 export default Imoveis;

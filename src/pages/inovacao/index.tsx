@@ -1,13 +1,5 @@
 import React from 'react';
-import { BuscaDesktop, FooterDesktop, HeaderDesktop, MenuMobile } from '../../components';
 
-const Inovacao: React.FC = () => (
-  <>
-    <HeaderDesktop />
-    <BuscaDesktop />
-    <MenuMobile />
-    <FooterDesktop />
-  </>
-);
+const Inovacao: React.FC = () => <h1>Inovação</h1>;
 
 export default Inovacao;

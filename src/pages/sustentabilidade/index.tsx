@@ -1,13 +1,5 @@
 import React from 'react';
-import { BuscaDesktop, FooterDesktop, HeaderDesktop, MenuMobile } from '../../components';
 
-const Sustentabilidade: React.FC = () => (
-  <>
-    <HeaderDesktop />
-    <BuscaDesktop />
-    <MenuMobile />
-    <FooterDesktop />
-  </>
-);
+const Sustentabilidade: React.FC = () => <h1>Sustentabilidade</h1>;
 
 export default Sustentabilidade;

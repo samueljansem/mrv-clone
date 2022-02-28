@@ -1,13 +1,5 @@
 import React from 'react';
-import { BuscaDesktop, FooterDesktop, HeaderDesktop, MenuMobile } from '../../components';
 
-const Institucional: React.FC = () => (
-  <>
-    <HeaderDesktop />
-    <BuscaDesktop />
-    <MenuMobile />
-    <FooterDesktop />
-  </>
-);
+const Institucional: React.FC = () => <h1>Institucional</h1>;
 
 export default Institucional;
