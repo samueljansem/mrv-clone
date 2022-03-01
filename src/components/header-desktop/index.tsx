@@ -31,12 +31,12 @@ const Header: React.FC = () => {
     return (
         <Container>
             <main>
-                <div className="header-logo">
+                <div>
                     <a href="/">
                         <ImgLogo alt="MRV" src={logo} />
                     </a>
                 </div>
-                <Links className="header-links">
+                <Links>
                     {topo?.map((item) => (
                         <LinkWrapper>
                             <Link to={item.pathName}>{item.name}</Link>

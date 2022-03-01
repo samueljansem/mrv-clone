@@ -92,7 +92,6 @@ const Classificacao = styled.div`
     justify-content: center;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 5px;
-    font-family: 'averta-regular';
     font-size: 14px;
     color: var(--color-white);
 `;
@@ -115,7 +114,6 @@ const Bairro = styled.span`
 const Cidade = styled.span`
     width: 90%;
     color: var(--color-lightblack);
-    font-family: 'averta-regular';
 `;
 
 const Nome = styled.span`
@@ -135,7 +133,6 @@ const SeloWrapper = styled.div`
 
 const Selo = styled.span`
     width: 100%;
-    font-family: 'averta-regular';
     font-size: 16px;
 `;
 
@@ -147,7 +144,6 @@ const Diferenciais = styled.div`
 `;
 
 const Diferencial = styled.span`
-    font-family: 'averta-regular';
     width: 100%;
     font-size: 15px;
     margin-bottom: 10px;

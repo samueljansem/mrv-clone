@@ -20,10 +20,11 @@ export default createGlobalStyle`
   }
 
   * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     border: 0;
-    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
   }
 
   html, body, #root {
@@ -35,6 +36,7 @@ export default createGlobalStyle`
     overflow-x: hidden;
     overflow-y: overlay;
     scroll-behavior: smooth;
+    font-family: 'averta-regular';
   }
 
   ::-webkit-scrollbar {

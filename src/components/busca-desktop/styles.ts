@@ -37,7 +37,6 @@ const Container = styled.div`
 
 const SearchTitle = styled.span`
     color: var(--color-white);
-    font-family: 'averta-regular';
 `;
 
 const BoxChat = styled.div`

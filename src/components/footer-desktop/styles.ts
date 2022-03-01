@@ -125,7 +125,6 @@ const LogoWrapper = styled.div`
 
 const Rights = styled.span`
     color: #999e9c;
-    font-family: 'averta-regular';
     font-size: 16px;
 `;
 

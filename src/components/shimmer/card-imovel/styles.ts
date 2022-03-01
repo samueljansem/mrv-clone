@@ -237,7 +237,6 @@ const Diferenciais = styled.div`
 `;
 
 const Diferencial = styled.span`
-    font-family: 'averta-regular';
     width: 100%;
     font-size: 15px;
     margin-bottom: 10px;
